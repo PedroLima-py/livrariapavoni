@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria São Ludovico Pavoni | Livraria Religiosa no Gama</title>
+    <meta name="description" content="Livraria religiosa com amplo acervo de livros católicos, artigos religiosos, bíblias e presentes espirituais. Localizada na Paróquia São Sebastião, Gama-DF.">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon e ícones -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Meta tags para redes sociais -->
+    <meta property="og:title" content="Livraria São Ludovico Pavoni">
+    <meta property="og:description" content="Sua livraria católica no coração do Gama">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://livrariapavoni.com.br">
+    <meta property="og:type" content="website">
+    
+    <!-- Meta tags para Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Livraria São Ludovico Pavoni">
+    <meta name="twitter:description" content="Sua livraria católica no coração do Gama">
+    <meta name="twitter:image" content="assets/images/og-image.jpg">
+    
+    <!-- Estilo da cor tema -->
+    <style>
+        :root {
+            --primary: #2aa8e3;
+            --primary-dark: #1e87b8;
+            --primary-light: #5bc0f5;
+            --secondary: #333333;
+            --accent: #d4af37;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --white: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="Logo Livraria São Ludovico Pavoni" class="logo-img">
+                    <div class="logo-text">
+                        <h1>Livraria São Ludovico Pavoni</h1>
+                        <p>Sua livraria católica no coração do Gama</p>
+                    </div>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu principal">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <nav class="nav" id="mainNav" aria-label="Navegação principal">
+                <ul>
+                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Início</a></li>
+                    <li><a href="#sobre"><i class="fas fa-info-circle"></i> Sobre</a></li>
+                    <li><a href="#produtos"><i class="fas fa-book"></i> Produtos</a></li>
+                    <li><a href="#localizacao"><i class="fas fa-map-marker-alt"></i> Localização</a></li>
+                    <li><a href="#contato"><i class="fas fa-phone-alt"></i> Contato</a></li>
+                    <li class="nav-highlight"><a href="#ofertas"><i class="fas fa-gift"></i> Ofertas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Encontre Paz e Sabedoria em Cada Página</h2>
+            <p>Livros católicos, artigos religiosos, bíblias e presentes espirituais para sua jornada de fé</p>
+            <div class="hero-buttons">
+                <a href="#produtos" class="btn btn-primary">Ver Catálogo</a>
+                <a href="#localizacao" class="btn btn-secondary">Como Chegar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section about" id="sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre a Livraria</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Há mais de 10 anos servindo a comunidade católica do Gama e região, a <strong>Livraria São Ludovico Pavoni</strong> está localizada dentro da <strong>Paróquia São Sebastião</strong>, oferecendo um ambiente acolhedor para encontrar recursos para sua vida espiritual.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-pray"></i>
+                            <h3>Missão</h3>
+                            <p>Proporcionar literatura e artigos religiosos de qualidade que fortaleçam a fé e a formação católica.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hands-helping"></i>
+                            <h3>Atendimento</h3>
+                            <p>Atendimento personalizado e acolhedor, com conhecimento sobre os produtos e vivência da fé.</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <h3>Qualidade</h3>
+                            <p>Seleção cuidadosa de editoras católicas reconhecidas e produtos de alta durabilidade.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/interior-livraria.jpg" alt="Interior da livraria com livros religiosos">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="section products" id="produtos">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="product-categories">
+                <button class="category-btn active" data-category="todos">Todos</button>
+                <button class="category-btn" data-category="livros">Livros</button>
+                <button class="category-btn" data-category="biblias">Bíblias</button>
+                <button class="category-btn" data-category="artigos">Artigos</button>
+                <button class="category-btn" data-category="presentes">Presentes</button>
+            </div>
+            
+            <div class="product-count" id="productCount">4 produtos encontrados</div>
+            
+            <div class="products-grid">
+                <!-- Produto 1 - Bíblia -->
+                <div class="product-card" data-category="biblias">
+                    <div class="product-badge">Mais Vendido</div>
+                    <div class="product-image">
+                        <img src="assets/images/produtos/biblia.jpg" alt="Bíblia Sagrada">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bíblia de Jerusalém</h3>
+                        <p class="product-description">Bíblia católica com notas de rodapé, mapas e introduções aos livros.</p>
+                        <div class="product-price">
+                            <span class="price">R$ 89,90</span>
+                            <span class="old-price">R$ 109,90</span>
+                        </div>
+                        <button class="btn-product"><i class="fas fa-info-circle"></i> Detalhes</button>
+                    </div>
+                </div>
+                
+                <!-- Produto 2 - Livro -->
+                <div class="product-card" data-category="livros">
+                    <div class="product-image">
+                        <img src="assets/images/produtos/livro-espiritualidade.jpg" alt="Livro de espiritualidade">
+                    </div>
+                    <div class="product-info">
+                        <h3>Caminho da Perfeição</h3>
+                        <p class="product-description">Guia prático para crescimento espiritual no dia a dia.</p>
+                        <div class="product-price">
+                            <span class="price">R$ 42,50</span>
+                        </div>
+                        <button class="btn-product"><i class="fas fa-info-circle"></i> Detalhes</button>
+                    </div>
+                </div>
+                
+                <!-- Produto 3 - Terço -->
+                <div class="product-card" data-category="artigos">
+                    <div class="product-image">
+                        <img src="assets/images/produtos/terco-madeira.jpg" alt="Terço religioso">
+                    </div>
+                    <div class="product-info">
+                        <h3>Terço de Madeira Olivais</h3>
+                        <p class="product-description">Terço artesanal feito com contas de madeira de oliveira de Jerusalém.</p>
+                        <div class="product-price">
+                            <span class="price">R$ 65,00</span>
+                        </div>
+                        <button class="btn-product"><i class="fas fa-info-circle"></i> Detalhes</button>
+                    </div>
+                </div>
+                
+                <!-- Produto 4 - Quadro -->
+                <div class="product-card" data-category="presentes">
+                    <div class="product-badge">Novidade</div>
+                    <div class="product-image">
+                        <img src="assets/images/produtos/quadro-jesus.jpg" alt="Imagem sacra de Jesus">
+                    </div>
+                    <div class="product-info">
+                        <h3>Quadro Sagrado Coração de Jesus</h3>
+                        <p class="product-description">Imagem sacra em moldura de madeira, ideal para presentear.</p>
+                        <div class="product-price">
+                            <span class="price">R$ 120,00</span>
+                        </div>
+                        <button class="btn-product"><i class="fas fa-info-circle"></i> Detalhes</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="#contato" class="btn btn-primary btn-large">
+                    <i class="fas fa-whatsapp"></i> Consultar Disponibilidade
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização -->
+    <section class="section location" id="localizacao">
+        <div class="container">
+            <h2 class="section-title">Onde Estamos</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3><i class="fas fa-church"></i> Dentro da Paróquia São Sebastião</h3>
+                    <div class="address">
+                        <i class="fas fa-map-pin"></i>
+                        <div>
+                            <p><strong>Endereço:</strong> Área Especial 2 Praça 2, Gama-Setor Leste</p>
+                            <p><strong>CEP:</strong> 72.460-110</p>
+                            <p><strong>Cidade:</strong> Gama - Distrito Federal</p>
+                        </div>
+                    </div>
+                    
+                    <div class="location-details">
+                        <div class="detail">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Horário de Funcionamento</h4>
+                                <p>Segunda a Sexta: 8h às 18h</p>
+                                <p>Sábado: 8h às 12h</p>
+                                <p>Domingo: Após as missas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail">
+                            <i class="fas fa-parking"></i>
+                            <div>
+                                <h4>Estacionamento</h4>
+                                <p>Amplo estacionamento gratuito dentro da paróquia</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-box">
+                        <h4>Venha nos visitar!</h4>
+                        <p>Estamos ansiosos para recebê-lo e ajudar em sua jornada espiritual.</p>
+                        <a href="https://maps.google.com/?q=Área+Especial+2+Praça+2,+Gama-Setor+Leste,+DF" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <i class="fas fa-directions"></i> Abrir no Google Maps
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="location-map">
+                    <!-- Mapa do Google -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.432304102674!2d-47.99866892470798!3d-15.836436422929206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a254c61e3dc85%3A0xfda5fd18cfc0b7b7!2sPar%C3%B3quia%20S%C3%A3o%20Sebasti%C3%A3o%20-%20Gama%2C%20Bras%C3%ADlia%20-%20DF!5e0!3m2!1spt-BR!2sbr!4v1688601234567!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização da Livraria São Ludovico Pavoni">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section contact" id="contato">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Fale Conosco</h3>
+                    <p>Tem dúvidas sobre produtos, disponibilidade ou precisa de orientação? Entre em contato!</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Telefones</h4>
+                                <p><a href="tel:+556133849347">(61) 3384-9347</a></p>
+                                <p><a href="tel:+5561983364705">(61) 98336-4705</a> (WhatsApp)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p><a href="mailto:contato@livrariapavoni.com.br">contato@livrariapavoni.com.br</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <i class="fab fa-whatsapp"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>Clique abaixo para conversar conosco:</p>
+                                <a href="https://wa.me/5561983364705?text=Olá! Gostaria de informações sobre os produtos da livraria." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                                    <i class="fab fa-whatsapp"></i> Enviar Mensagem
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-media">
+                        <h4>Siga-nos</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Envie sua Mensagem</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome *</label>
+                            <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(61) 99999-9999">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject">
+                                <option value="">Selecione...</option>
+                                <option value="produto">Consulta sobre produto</option>
+                                <option value="pedido">Informações sobre pedido</option>
+                                <option value="sugestao">Sugestão</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Digite sua mensagem aqui..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img src="assets/images/logo.png" alt="Logo Livraria São Ludovico Pavoni" class="footer-logo-img">
+                        <div class="logo-text">
+                            <h3>Livraria São Ludovico Pavoni</h3>
+                            <p>Servindo a comunidade católica do Gama desde 2010</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Links Rápidos</h4>
+                        <ul>
+                            <li><a href="#home">Início</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#produtos">Produtos</a></li>
+                            <li><a href="#localizacao">Localização</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Produtos</h4>
+                        <ul>
+                            <li><a href="#produtos">Livros Católicos</a></li>
+                            <li><a href="#produtos">Bíblias</a></li>
+                            <li><a href="#produtos">Artigos Religiosos</a></li>
+                            <li><a href="#produtos">Presentes Espirituais</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contato</h4>
+                        <ul class="contact-list">
+                            <li><i class="fas fa-map-marker-alt"></i> Paróquia São Sebastião, Gama-DF</li>
+                            <li><i class="fas fa-phone"></i> (61) 3384-9347</li>
+                            <li><i class="fab fa-whatsapp"></i> (61) 98336-4705</li>
+                            <li><i class="fas fa-envelope"></i> contato@livrariapavoni.com.br</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2026</span> Livraria São Ludovico Pavoni. Todos os direitos reservados.</p>
+                <p>Desenvolvido com ❤️ para a comunidade católica do Gama</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5561983364705?text=Olá! Gostaria de informações sobre os produtos da livraria." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
